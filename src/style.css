@@ -1,3 +1,89 @@
-.hello {
-  color: red;
+/* 
+  CSS Reset
+*/
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 
+  CSS
+*/
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  cursor: pointer;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px;
+  font-size: 28px;
+  padding: 0px 10px;
+}
+
+.tasks {
+  border: 3px solid green;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+h6 {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid yellow;
+  width: 65%;
+  margin: auto;
+}
+
+li {
+  border: 3px solid red;
+  width: 70%;
+  margin: auto;
+  list-style-type: none;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }

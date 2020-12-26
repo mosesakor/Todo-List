@@ -12,3 +12,8 @@ function component() {
 }
 
 document.body.appendChild(component());
+
+const createTodoObject = (title, description, date) => {
+  
+}
+

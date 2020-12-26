@@ -89,13 +89,28 @@ li {
   list-style-type: none;
   font-size: 18px;
   padding: 7px;
-  opacity: 0.2;
   cursor: pointer;
+}
+
+ul :nth-last-child(2) {
+  opacity: 0.2;
 }
 
 li:hover {
   opacity: 1;
 }
+
+b {
+  float: left;
+}
+
+input:not(#date) {
+  width: 50%;
+  height: 40px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}

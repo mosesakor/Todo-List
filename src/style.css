@@ -1,3 +1,6 @@
+@import url('../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css');
+
+
 /* 
   CSS Reset
 */
@@ -64,23 +67,26 @@ img {
 .tasks {
   border: 3px solid green;
   width: 70%;
-  margin: auto;
-  text-align: center;
+  margin: auto; 
 }
 
-h6 {
+h4 {
   display: flex;
   justify-content: space-between;
-  border: 3px solid yellow;
   width: 65%;
   margin: auto;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 li {
-  border: 3px solid red;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
   width: 70%;
   margin: auto;
   list-style-type: none;
+  font-size: 20px;
+  padding: 7px;
 }
 
 @media screen and (max-height: 450px) {

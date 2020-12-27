@@ -67,6 +67,30 @@ img {
   padding: 0px 10px;
 }
 
+.newProject {
+  text-align: center;
+}
+
+#newButton {
+  margin-bottom: 10px;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #666;
+}
+
+#newButton:hover {background-color: black}
+
+#newButton:active {
+  transform: translateY(4px);
+}
+
 .tasks {
   width: 70%;
   margin: auto; 
@@ -96,19 +120,35 @@ ul :nth-last-child(2) {
   opacity: 0.2;
 }
 
+
 li:hover {
   opacity: 1;
 }
 
-b {
-  float: left;
+form {
+  display: none;
 }
 
-input:not(#date) {
+form span {
+  font-size: 35px;
+  font-weight: 100;
+  margin: 5px;
+  opacity: 0.2;
+}
+
+form span:hover {
+  opacity: 1;
+}
+
+form input:not(#date) {
   width: 50%;
   height: 40px;
   margin-bottom: 5px;
   padding: 5px;
+}
+
+#hide {
+  display: none;
 }
 
 

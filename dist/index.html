@@ -16,17 +16,20 @@
 
     <div class="main">
       <div class="tasks">
+        <div class="newProject">
+          <button id="newButton">New Project</button>
+        </div>
         <h4>
           <span class="proj">Project</span>
           <span class="due">Due Date</span>
         </h4>
         <ul>
-          <li id="newTask">
+          <li id="openBtn">
             <i class="fas fa-plus-circle"></i>
             <span>Add Task</span>
           </li>
           <li>
-            <form>
+            <form id="myForm">
               <label for="title"></label>
               <input type="text" id="title" placeholder="Title" name="title" required>
               <br>
@@ -38,6 +41,9 @@
               <label for="date"></label>
               <input type="date" id="date" placeholder="Date" name="date" required>
               <br>
+              <span id="addTask"><i class="fa fa-check"></i></span>
+              <span id="hide"><i class="fa fa-check"></i></span>
+              <span id="closeBtn"><i class="fas fa-ban"></i></span>
             </form>
           </li>
         </ul>
